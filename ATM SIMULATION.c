@@ -9,10 +9,8 @@ int main()
     scanf("%d", &pin);
 
     printf("---WELCOME TO THE ATM SIMULATION---\n");
-
-    // ? Take initial balance (optional in real ATM, but okay here for learning)
     printf("Enter your balance amount: ?");
-    scanf("%f", &balance);  // ? Corrected: Removed '\n'
+    scanf("%f", &balance); 
 
     printf("Enter your password: ");
     scanf("%d", &pass);
@@ -29,7 +27,7 @@ int main()
         printf("3. Withdraw\n");
         printf("4. Exit\n");
         printf("Enter your choice: ");
-        scanf("%d", &choice);  // ? Now you’re reading choice each time
+        scanf("%d", &choice);  
 
         switch (choice) {
             case 1:
@@ -38,7 +36,7 @@ int main()
 
             case 2:
                 printf("Enter the amount to deposit: ?");
-                scanf("%f", &amount);  // ? Corrected format
+                scanf("%f", &amount);
                 if (amount > 0) {
                     balance += amount;
                     printf("Deposited ?%.2f successfully.\n", amount);
